@@ -64,7 +64,9 @@
 				<span class="p-1" v-for="(interest, i) in interests" :key="i">{{ interest }}</span>
 			</div>
 		</div>
-		<div class="header flex flex-col items-center mb-8 pt-10">
+		<div
+			class="header bg-teal-500 flex flex-col items-center mb-8 pt-10 border-dashed border-teal-600 border-8"
+		>
 			<span class="text-6xl">FELIX GRAFSCHMIDT</span>
 			<span class="text-3xl font-bold mt-2">ANGESTREBTE POSITION</span>
 			<span class="text-3xl">{{ position }}</span>
