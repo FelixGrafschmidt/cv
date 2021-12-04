@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>Page Title</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<style>
+			.container {
+				display: grid;
+				grid-template-columns: repeat(6, 1fr);
+				grid-template-rows: repeat(7, 1fr);
+				gap: 0px 0px;
+				grid-auto-flow: row;
+				grid-template-areas:
+					"Photo Photo Header Header Header Header"
+					"Photo Photo Header Header Header Header"
+					"About-Me About-Me Professional Professional Professional Professional"
+					"Contact Contact Professional Professional Professional Professional"
+					"Skills Skills Education Education Education Education"
+					"Languages Languages Education Education Education Education"
+					"Interests Interests Signature Signature Signature Signature";
+			}
+
+			.Photo {
+				grid-area: Photo;
+				background-image: "felix-grafschmidt.1024x1024.jpg";
+			}
+
+			.Header {
+				grid-area: Header;
+			}
+
+			.About-Me {
+				grid-area: About-Me;
+			}
+
+			.Contact {
+				grid-area: Contact;
+			}
+
+			.Skills {
+				grid-area: Skills;
+			}
+
+			.Languages {
+				grid-area: Languages;
+			}
+
+			.Interests {
+				grid-area: Interests;
+			}
+
+			.Signature {
+				grid-area: Signature;
+			}
+
+			.Professional {
+				grid-area: Professional;
+			}
+
+			.Education {
+				grid-area: Education;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="Photo">Photo</div>
+			<div class="Header">Header</div>
+			<div class="About-Me">About Me</div>
+			<div class="Contact">Contact</div>
+			<div class="Skills">Skills</div>
+			<div class="Languages">Languages</div>
+			<div class="Interests">Interests</div>
+			<div class="Signature">Signature</div>
+			<div class="Professional">Professional</div>
+			<div class="Education">Education</div>
+		</div>
+	</body>
+
+</html>
