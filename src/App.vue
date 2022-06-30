@@ -1,20 +1,24 @@
 <template>
-	<div class="w-[297mm] h-[50mm] bg-dark absolute" />
-	<div class="flex w-[297mm] gap-16 flex-row h-[210mm] p-12 z-1">
-		<aside class="w-1/5 flex flex-col gap-6">
-			<div class="photo w-64 h-64">
+	<div class="absolute nice-background h-48 -z-1 w-full top-0 opacity-80"></div>
+	<div class="flex w-[297mm] gap-8 flex-row p-12 ">
+		<aside class="w-1/3 flex flex-col gap-6 p-4 h-full bg-gray-200">
+			<div class="p-2">
 				<img src="./assets/felix-grafschmidt.1024x1024.jpg" alt="Photo">
 			</div>
-			<div class="about flex flex-col">
-				<span class="mb-4 text-lg font-semibold underline-solid">ÜBER MICH</span>
+			<div class="flex flex-col">
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">ÜB</span>ER MICH
+				</span>
 				<div v-for="(item, i) in aboutMe" :key="i">
 					<span class="font-bold">{{ item.key }}:&nbsp;</span>
 					<span>{{ item.value }}</span>
 				</div>
 			</div>
-			<div class="contact flex flex-col">
-				<span class="mb-4 text-lg font-semibold">KONTAKT</span>
-				<span class="flex items-center h-14">
+			<div class="flex flex-col">
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">KO</span>NTAKT
+				</span>
+				<span class="flex items-center gap-1 h-14">
 					<img src="./assets/address.svg" alt="address" class="w-8 h-8">
 					<span class="flex flex-col ml-2">
 						<span>{{ contact.address.street }} {{ contact.address.number }},</span>
@@ -22,65 +26,72 @@
 						<span>{{ contact.address.country }}</span>
 					</span>
 				</span>
-				<span class="flex items-center h-14">
+				<span class="flex items-center gap-1 h-14">
 					<img src="./assets/phone.svg" alt="phone" class="w-8 h-8">
 					<span class="flex flex-col ml-2">
-						<span>{{ contact.phone }}</span>
+						<a :href="'tel:' + contact.phone">{{ contact.phone }}</a>
 					</span>
 				</span>
-				<span class="flex items-center h-14">
+				<span class="flex items-center gap-1 h-14">
 					<img src="./assets/mail.svg" alt="mail" class="w-8 h-8">
 					<span class="flex flex-col ml-2">
-						<span>{{ contact.mail }}</span>
+						<a :href="'mailto:' + contact.mail">{{ contact.mail }}</a>
 					</span>
 				</span>
 			</div>
-			<div class="skills">
-				<span class="mb-4 text-lg font-semibold">KOMPETENZEN</span>
-				<div v-for="(skill, i) in Object.entries(skills)" :key="i" class="relative pt-1">
-					<div class="flex mb-2 items-center justify-between">
-						<div>
-							<span
-								class="text-xs font-semibold inline-block py-1 px-2 rounded-full text-teal-800 bg-teal-200">
-								{{ skill[0] }}</span>
+			<div>
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">KO</span>MPETENZEN
+				</span>
+				<div class="mt-4">
+					<div v-for="(skill, i) in Object.entries(skills)" :key="i" class="relative pt-1">
+						<div class="flex mb-2 items-center justify-between">
+							<div>
+								<span
+									class="text-xs font-semibold inline-block py-1 px-2 rounded-full text-teal-800 bg-teal-200">
+									{{ skill[0] }}</span>
+							</div>
 						</div>
-					</div>
-					<div class="overflow-hidden h-2 text-xs flex rounded bg-teal-200">
-						<div :style="`width: ${skill[1]}%`"
-							class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-600">
+						<div class="overflow-hidden h-2 text-xs flex rounded bg-teal-200">
+							<div :style="`width: ${skill[1]}%`"
+								class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-teal-600">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="languages flex flex-col">
-				<span class="mb-4 text-lg font-semibold">KOMPETENZEN</span>
+			<div class="flex flex-col">
 				<span v-for="(language, i) in Object.entries(languages)" :key="i">
 					<span class="font-bold">{{ language[0] }}:&nbsp;</span>
 					<span>{{ language[1] }}</span>
 				</span>
 			</div>
-			<div class="interests flex flex-col">
-				<span class="mb-4 text-lg font-semibold">INTERESSEN & HOBBYS</span>
+			<div class="flex flex-col">
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">IN</span>TERESSEN & HOBBYS
+				</span>
 				<div class="max-h-[8rem] flex flex-col flex-wrap">
 					<span v-for="(interest, i) in interests" :key="i" class="p-1">{{ interest }}</span>
 				</div>
 			</div>
 		</aside>
-		<main class="w-4/5">
-			<div
-				class="header bg-teal-500 flex flex-col items-center mb-8 pt-10 border-dashed border-teal-600 border-8">
-				<span class="text-6xl">FELIX GRAFSCHMIDT</span>
-				<span class="text-3xl font-bold mt-2">ANGESTREBTE POSITION</span>
-				<span class="text-3xl">{{ position }}</span>
+		<main class="w-2/3">
+			<div class="bg-black p-4 mb-4">
+				<div class="bg-black text-white flex flex-col items-center border-white-600 border-2 p-4">
+					<span class="text-6xl text-teal-600 font-bold">FELIX GRAFSCHMIDT</span>
+					<span class="text-3xl font-bold mt-2">ANGESTREBTE POSITION</span>
+					<span class="text-3xl">{{ position }}</span>
+				</div>
 			</div>
-			<div class="professional flex flex-col mb-8">
-				<span class="mb-4 text-lg font-semibold">BERUFLICHER WERDEGANG</span>
+			<div class="flex flex-col mb-8">
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">BE</span>RUFLICHER WERDEGANG
+				</span>
 			</div>
-			<div class="education flex flex-col mb-8">
-				Education
-			</div>
-			<div class="signature flex flex-col mb-8">
-				Signature
+			<div class="flex flex-col mb-8">
+				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
+					<span class="underline underline-offset-5 underline-6">SC</span>HULISCHER WERDEGANG
+				</span>
 			</div>
 		</main>
 	</div>
@@ -108,7 +119,7 @@ export default defineComponent({
 					place: "Nussbaumen AG",
 					country: "CH",
 				},
-				phone: "079 291 72 99",
+				phone: "+41 79 291 72 99",
 				mail: "felix.grafschmidt@gmail.com",
 			},
 			skills: {
@@ -142,60 +153,16 @@ export default defineComponent({
 });
 </script>
 
-<style>
-/* .container {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(7, 1fr);
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"photo photo header header header header"
-		"photo photo header header header header"
-		"about about professional professional professional professional"
-		"contact contact professional professional professional professional"
-		"skills skills education education education education"
-		"languages languages education education education education"
-		"interests interests signature signature signature signature";
+<style lang="postcss" scoped>
+.nice-background {
+	background:
+		linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+		linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 32px;
+	background-color: #708090;
+	background-size: 32px 64px;
 }
 
-.photo {
-	grid-area: photo;
+.small-caps {
+	font-variant-caps: small-caps;
 }
-
-.header {
-	grid-area: header;
-}
-
-.about {
-	grid-area: about;
-}
-
-.contact {
-	grid-area: contact;
-}
-
-.skills {
-	grid-area: skills;
-}
-
-.languages {
-	grid-area: languages;
-}
-
-.interests {
-	grid-area: interests;
-}
-
-.signature {
-	grid-area: signature;
-}
-
-.professional {
-	grid-area: professional;
-}
-
-.education {
-	grid-area: education;
-} */
 </style>
