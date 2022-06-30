@@ -1,14 +1,11 @@
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import WindiCSS from "vite-plugin-windicss";
 
 export default defineConfig({
 	build: {},
 	optimizeDeps: {
-		include: [
-			'vue',
-		]
+		include: ["vue"],
 	},
-	plugins: [
-		vue()
-	]
+	plugins: [vue(), WindiCSS()],
 });
