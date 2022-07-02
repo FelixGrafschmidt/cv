@@ -39,11 +39,11 @@
 					</span>
 				</span>
 			</div>
-			<div>
+			<div class="flex flex-col">
 				<span class="mb-4 w-full text-2xl pb-1 text-teal-600 font-semibold border-b-4 border-gray-300">
 					<span class="underline underline-offset-5 underline-6">HA</span>UPTKOMPETENZEN
 				</span>
-				<div class="mt-4">
+				<div>
 					<div v-for="(skill, i) in Object.entries(skills)" :key="i" class="relative pt-1">
 						<div class="flex mb-2 items-center justify-between">
 							<div>
@@ -80,7 +80,7 @@
 				<div class="bg-black text-white flex flex-col items-center border-white-600 border-2 p-4">
 					<span class="text-6xl text-teal-600 mb-2 font-bold">FELIX GRAFSCHMIDT</span>
 					<span class="text-3xl font-bold hidden print:block">ANGESTREBTE POSITION</span>
-					<span class="text-3xl">{{ targetPosition }}</span>
+					<span class="text-3xl uppercase" @click="changePosition">{{ targetPosition }}</span>
 				</div>
 			</div>
 			<div class="flex flex-col mb-8 gap-4">
@@ -88,9 +88,9 @@
 					<span class="underline underline-offset-5 underline-6">BE</span>RUFLICHER WERDEGANG
 				</span>
 				<div v-for="experience, i in professionalExperience" :key="i" class="flex flex-row"
-					:class="{ 'bg-gray-200': experience.group }">
+					:class="{ 'bg-gray-200 py-2': experience.group }">
 					<span v-if="experience.group"
-						class="font-bold text-lg write-vertical-right rotate-180 transform justify-end flex pb-4 border-l-4 border-gray-300 px-2 mr-4">{{ experience.group }}</span>
+						class="my-2 font-bold text-lg write-vertical-right rotate-180 transform justify-end flex pb-4 border-l-4 border-gray-300 px-2 mr-4">{{ experience.group }}</span>
 					<span v-else class="mr-16">
 					</span>
 					<div class="flex flex-col gap-4">
@@ -136,13 +136,14 @@
 					betrachten im Moment ein aus dieser Website erstelltes PDF.
 				</span>
 				<span>
-					Die Webversion finden Sie <a class="text-blue-500 underline"
-						href="https://cv.ithambar.moe">hier</a>.
+					Die Webversion finden Sie <a class="text-blue-500 underline" href="https://cv.ithambar.moe">hier
+						(https://cv.ithambar.moe)</a>.
 				</span>
 				<span>
 					Ich werde die Webversion laufend updaten, sowohl inhaltlich als auch technisch. Den Quellcode
 					finden
-					Sie <a class="text-blue-500 underline" href="https://github.com/FelixGrafschmidt/cv">hier</a>.
+					Sie <a class="text-blue-500 underline" href="https://github.com/FelixGrafschmidt/cv">hier
+						(https://github.com/FelixGrafschmidt/cv)</a>.
 				</span>
 			</div>
 		</main>
@@ -221,6 +222,11 @@ export default defineComponent({
 			]
 		};
 	},
+	methods: {
+		changePosition() {
+			this.targetPosition = window.prompt("Angestrebte Position") || this.targetPosition
+		}
+	}
 });
 </script>
 
