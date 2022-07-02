@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"serve": "vite",
-		"deploy": "vite build && cp CNAME dist && gh-pages -d dist",
+		"deploy": "vite build && echo \"cv.ithambar.moe\" > dist/CNAME && gh-pages -d dist",
 		"build": "vite build"
 	},
 	"dependencies": {
