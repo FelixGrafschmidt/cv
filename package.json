@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"serve": "vite",
-		"deploy": "gh-pages -d dist",
+		"deploy": "vite build && cp CNAME dist && gh-pages -d dist",
 		"build": "vite build"
 	},
 	"dependencies": {
