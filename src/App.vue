@@ -193,7 +193,7 @@ export default defineComponent({
 			},
 			interests: [
 				"Formale Logik",
-				"Lingustik",
+				"Linguistik",
 				"Philosophie",
 				"Geschichte",
 				"Videospiele",
