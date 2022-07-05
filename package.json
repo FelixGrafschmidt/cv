@@ -5,31 +5,32 @@
 	"scripts": {
 		"serve": "vite",
 		"deploy": "vite build && echo \"cv.ithambar.moe\" > dist/CNAME && gh-pages -d dist",
-		"build": "vite build"
+		"build": "vite build",
+		"run": "vite preview"
 	},
 	"dependencies": {
 		"@vitejs/plugin-vue": "^2.3.3",
 		"core-js": "^3.23.3",
 		"vite": "^2.9.13",
-		"vite-plugin-windicss": "^1.8.5",
+		"vite-plugin-windicss": "^1.8.6",
 		"vue": "3.2.37",
-		"vue-i18n": "9",
-		"windicss": "^3.5.5"
+		"vue-i18n": "9.1.10",
+		"windicss": "^3.5.6"
 	},
 	"devDependencies": {
 		"@intlify/vite-plugin-vue-i18n": "^3.4.0",
 		"@rushstack/eslint-patch": "^1.1.4",
-		"@typescript-eslint/eslint-plugin": "^5.30.0",
-		"@typescript-eslint/parser": "^5.30.0",
-		"@vue/cli-plugin-babel": "5.0.6",
-		"@vue/cli-plugin-typescript": "5.0.6",
-		"@vue/cli-service": "5.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.30.5",
+		"@typescript-eslint/parser": "^5.30.5",
+		"@vue/cli-plugin-babel": "5.0.7",
+		"@vue/cli-plugin-typescript": "5.0.7",
+		"@vue/cli-service": "5.0.7",
 		"@vue/compiler-sfc": "3.2.37",
 		"@vue/eslint-config-prettier": "^7.0.0",
 		"@vue/eslint-config-typescript": "^11.0.0",
-		"eslint": "^8.18.0",
+		"eslint": "^8.19.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.1.0",
+		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-typescript": "^0.14.0",
 		"eslint-plugin-vue": "^9.1.1",
 		"gh-pages": "^4.0.0",
