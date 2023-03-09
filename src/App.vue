@@ -143,8 +143,8 @@
 				</span>
 				<i18n-t keypath="webVersion" tag="span">
 					<template #link>
-						<a class="text-blue-500 underline" :href="`https://cv.ithambar.moe?language=${$i18n.locale}`"
-							>{{ $t("here") }} (https://cv.ithambar.moe)</a
+						<a class="text-blue-500 underline" :href="`https://cv.felgraf.dev?language=${$i18n.locale}`"
+							>{{ $t("here") }} (https://cv.felgraf.dev)</a
 						>
 					</template>
 				</i18n-t>
