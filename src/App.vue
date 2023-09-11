@@ -82,7 +82,7 @@
 		<main class="w-2/3">
 			<div class="bg-black p-4 mb-4">
 				<div class="bg-black text-white flex flex-col items-center border-white-600 border-2 p-4">
-					<span class="text-6xl text-teal-600 mb-2 font-bold uppercase">Felix Grafschmidt</span>
+					<span class="text-5xl text-teal-600 mb-2 font-bold uppercase">Felix Grafschmidt</span>
 					<span class="text-3xl uppercase" @click="changePosition">{{ targetPosition }}</span>
 				</div>
 			</div>
