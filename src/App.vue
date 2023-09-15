@@ -177,7 +177,7 @@ export default defineComponent({
 					place: "Nussbaumen AG",
 					country: "CH",
 				},
-				phone: "+41 79 291 72 99",
+				phone: "+41 774 286 063",
 				mail: "felix.grafschmidt@gmail.com",
 			},
 			skills: {
