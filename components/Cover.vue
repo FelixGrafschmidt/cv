@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="absolute left-42 h-8cm w-8cm bg-white p-1 -top-74">
-			<img src="photo.jpg" :alt="localData.personalData.name" />
+			<img src="/photo.jpg" :alt="localData.personalData.name" />
 		</div>
 		<span class="ml-42 mt-10 text-2xl">Full Stack Web Developer</span>
 		<div class="mx-42 mt-10">
