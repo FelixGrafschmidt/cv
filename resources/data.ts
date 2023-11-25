@@ -96,7 +96,7 @@ export const data = {
 			},
 			{
 				timespan: "08/2005 – 07/2013",
-				institution: "Seconday School – Gymnasium Borbeck, Essen in Germany",
+				institution: "Secondary School – Gymnasium Borbeck, Essen in Germany",
 				topic: "General Higher Qualification for University Entrance",
 				additionalInformation: ["GPA: 1.8"],
 				degree: "",
