@@ -1,6 +1,6 @@
 <template>
 	<client-only>
-		<div class="break-inside-auto leading-5">
+		<div class="mb-12 break-inside-auto leading-5 print:mb-0">
 			<div class="max-w-210mm w-210mm">
 				<Cover :data="data" :language="language" />
 			</div>
