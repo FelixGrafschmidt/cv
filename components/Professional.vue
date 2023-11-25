@@ -35,9 +35,10 @@
 
 	const props = defineProps<{
 		data: Data;
+		language: keyof Data;
 	}>();
 
 	const localData = computed(() => {
-		return props.data.de;
+		return props.data[props.language];
 	});
 </script>

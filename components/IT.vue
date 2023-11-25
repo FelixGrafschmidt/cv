@@ -15,7 +15,7 @@
 				<div
 					v-for="(entry, i) in localData.itExperience.frontend"
 					:key="i"
-					class="border-2 border-teal-700 rounded-full bg-teal-200 px-2"
+					class="border-2 border-teal-700 rounded-full bg-teal-100 px-2"
 				>
 					<span class="font-bold">{{ entry }}</span>
 				</div>
@@ -25,7 +25,7 @@
 				<div
 					v-for="(entry, i) in localData.itExperience.backend"
 					:key="i"
-					class="border-2 border-teal-700 rounded-full bg-teal-200 px-2"
+					class="border-2 border-teal-700 rounded-full bg-teal-100 px-2"
 				>
 					<span class="font-bold">{{ entry }}</span>
 				</div>
@@ -39,9 +39,10 @@
 
 	const props = defineProps<{
 		data: Data;
+		language: keyof Data;
 	}>();
 
 	const localData = computed(() => {
-		return props.data.de;
+		return props.data[props.language];
 	});
 </script>
