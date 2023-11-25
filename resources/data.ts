@@ -121,7 +121,7 @@ export const data = {
 		itExperience: {
 			feTitle: "Frontend",
 			beTitle: "Backend",
-			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "tailwindss", "CSS", "HTML", "jQuery"],
+			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "tailwindcss", "CSS", "HTML", "jQuery"],
 			backend: [
 				"Nuxt.js",
 				"Spring Boot",
@@ -264,7 +264,7 @@ export const data = {
 		itExperience: {
 			feTitle: "Frontend",
 			beTitle: "Backend",
-			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "tailwindss", "CSS", "HTML", "jQuery"],
+			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "tailwindcss", "CSS", "HTML", "jQuery"],
 			backend: [
 				"Nuxt.js",
 				"Spring Boot",
