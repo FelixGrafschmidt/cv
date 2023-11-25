@@ -12,7 +12,7 @@ export const data = {
 		},
 		cover: {
 			summary:
-				"Highly motivated Web Developer with 6+ years of professional experience. Proficient in designing, supporting, and optimising full-stack company websites and internal web applications. Excelling in architecture planning, server-side scripting, system integration, and database management. Adept at conducting business requirement analyses and implementing server operations. Dedicated to delivering high-quality digital solutions. In possession of conceptual strength and a flexible, hands-on approach while relying on excellent interpersonal skills that allows for seamless integration into any team.",
+				"Highly motivated Web Developer with 6+ years of professional experience. Proficient in designing, supporting, and optimising full-stack company websites and internal web applications. Adept at conducting business requirement analyses and implementing server operations. Dedicated to delivering high-quality digital solutions. In possession of conceptual strength and a flexible, hands-on approach while relying on excellent interpersonal skills that allows for seamless integration into any team.",
 			appendixTitle: "Appendix",
 			appendix: ["Curriculum Vitae", "Credentials"],
 		},
