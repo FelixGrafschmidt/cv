@@ -14,7 +14,7 @@
 				<span class="text-sm text-gray-600">{{ entry.timespan }}</span>
 				<div class="flex flex-col gap-1">
 					<span>{{ entry.institution }}</span>
-					<span class="font-bold">{{ entry.topic }}</span>
+					<span class="font-bold text-teal-700">{{ entry.topic }}</span>
 					<ul class="ml-8 list-circle">
 						<li v-for="(task, j) in entry.additionalInformation" :key="j" class="pl-2">
 							{{ task }}

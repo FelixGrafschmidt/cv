@@ -121,7 +121,7 @@ export const data = {
 		itExperience: {
 			feTitle: "Frontend",
 			beTitle: "Backend",
-			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "CSS", "jQuery", "tailwindss"],
+			frontend: ["Nuxt.js", "Vue.js", "TypeScript", "JavaScript", "tailwindss", "CSS", "HTML", "jQuery"],
 			backend: [
 				"Nuxt.js",
 				"Spring Boot",
@@ -141,8 +141,9 @@ export const data = {
 		additionalExperience: [
 			{
 				title: "Languages",
-				values: ["German, native sepaker (C2)", "English, business fluent (C1/C2)", "French, basic knowledge (A2)", "Latin"],
+				values: ["German, native speaker (C2)", "English, business fluent (C1/C2)", "French, basic knowledge (A2)", "Latin"],
 			},
+			{ title: "Residence permit", values: ["B"] },
 		],
 	},
 	de: {
@@ -290,6 +291,7 @@ export const data = {
 					"Französisch, Grundkenntnisse (A2)",
 				],
 			},
+			{ title: "Aufenthaltsbewilligung", values: ["B"] },
 		],
 	},
 };

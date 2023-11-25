@@ -6,4 +6,9 @@ export default defineNuxtConfig({
 	typescript: {
 		shim: false,
 	},
+	// app: {
+	// 	head: {
+	// 		script: [{ src: "https://unpkg.com/pagedjs/dist/paged.polyfill.js", async: true }],
+	// 	},
+	// },
 });

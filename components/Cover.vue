@@ -14,7 +14,7 @@
 			<img src="/photo.jpg" :alt="localData.personalData.name" />
 		</div>
 		<span class="ml-42 mt-10 text-2xl">Full Stack Web Developer</span>
-		<div class="mx-42 mt-10">
+		<div class="mx-42 mt-8">
 			<h2 class="mb-1 flex flex-row gap-2 text-xl uppercase text-teal-700">
 				<div class="h-8 w-8 flex flex-row items-center justify-center border-1 border-teal-700 rounded-full">
 					<Icon name="fa6-solid:star" size="16" />

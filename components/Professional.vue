@@ -18,7 +18,7 @@
 				<span class="text-sm text-gray-600">{{ entry.timespan }}</span>
 				<div class="flex flex-col gap-1">
 					<span>{{ entry.employer }}</span>
-					<span class="font-bold">{{ entry.position }}</span>
+					<span class="font-bold text-teal-700">{{ entry.position }}</span>
 					<ul class="ml-8 list-circle">
 						<li v-for="(task, j) in entry.tasks" :key="j" class="pl-2">
 							{{ task }}

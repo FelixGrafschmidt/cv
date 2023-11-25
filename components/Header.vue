@@ -1,10 +1,10 @@
 <template>
-	<div class="relative flex flex-col justify-center">
+	<thead class="relative h-36 flex flex-col table-header-group justify-center">
 		<!-- Line -->
 		<div class="mx-8 mt-16 h-2px from-gray-600 via-teal-600 to-teal-600 from-90% bg-gradient-to-r"></div>
 		<!-- Name -->
 		<div class="absolute right-16 top-6 from-gray-600 to-teal-600 from-60% bg-gradient-to-r">
-			<div class="m-1.5px bg-white">
+			<div class="m-2px bg-white">
 				<div class="from-gray-600 to-teal-700 from-70% bg-gradient-to-r bg-clip-text p-2 text-2xl uppercase text-transparent">
 					{{ localData.personalData.name }}
 				</div>
@@ -29,7 +29,7 @@
 				{{ localData.personalData.phone }}
 			</a>
 		</div>
-	</div>
+	</thead>
 </template>
 
 <script setup lang="ts">
