@@ -14,7 +14,7 @@ export const data = {
 			summary:
 				"Highly motivated Web Developer with 6+ years of professional experience. Proficient in designing, supporting, and optimising full-stack company websites and internal web applications. Adept at conducting business requirement analyses and implementing server operations. Dedicated to delivering high-quality digital solutions. In possession of conceptual strength and a flexible, hands-on approach while relying on excellent interpersonal skills that allows for seamless integration into any team.",
 			appendixTitle: "Appendix",
-			appendix: ["Curriculum Vitae", "Credentials"],
+			appendix: ["Curriculum Vitae"],
 		},
 		personalData: {
 			pob: {
@@ -145,7 +145,7 @@ export const data = {
 			summary:
 				"Hoch motivierter Webentwickler mit mehr als 6 Jahren Berufserfahrung. Kompetent in der Gestaltung, Betreuung, und Optimierung von kompletten Unternehmenswebseiten und internen Anwendungen. Geschickt in der Durchführung von Analysen der Geschäftsanforderungen und Implementierung des Serverbetriebs. Engagiert bei der Bereitstellung von hochwertigen digitalen Lösungen. Im Besitz von konzeptioneller Stärke und einem flexiblen, praktischen Ansatz, sowie ausgezeichneten zwischenmenschlichen Fähigkeiten, die eine nahtlose Integration in jedes Team ermöglichen.",
 			appendixTitle: "Beilagen",
-			appendix: ["Lebenslauf", "Zeugnisse"],
+			appendix: ["Lebenslauf"],
 		},
 		personalData: {
 			pob: {
