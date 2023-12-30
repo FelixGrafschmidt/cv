@@ -31,7 +31,7 @@
 					<Icon class="mt-2px text-teal-700" name="fa:home" size="16" />
 				</div>
 				<span class="ml-1.7">
-					{{ [localData.personalData.street, localData.personalData.city].join(", ") }}
+					{{ [localData.personalData.city].join(", ") }}
 				</span>
 			</div>
 			<div class="flex flex-row items-center">

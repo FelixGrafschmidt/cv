@@ -13,11 +13,7 @@
 		<!-- Info -->
 		<div class="mx-20 mt-4 flex flex-row justify-end gap-4 text-xs">
 			<span class="flex flex-row items-center gap-1">
-				<Icon class="mt-2px text-teal-700" name="fa:home" size="12" />
-				{{ localData.personalData.street }}
-			</span>
-			<span class="flex flex-row items-center gap-1">
-				<Icon name="fa6-solid:location-dot" size="12" class="text-teal-700" />
+				<Icon name="fa:home" size="12" class="text-teal-700" />
 				{{ localData.personalData.city }}
 			</span>
 			<a class="flex flex-row items-center gap-1" :href="`mailto:${localData.personalData.mail}`">
