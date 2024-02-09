@@ -52,7 +52,7 @@ export const data = {
 			{
 				timespan: "08/2019 – 07/2021",
 				employer: "Interhome Group – HHD GmbH, Freiburg in Germany",
-				position: "Software Develolper",
+				position: "Software Developer",
 				tasks: ["Identical tasks and same team as in position 'Web Developer'"],
 			},
 			{
