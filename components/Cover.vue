@@ -51,7 +51,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="ml-42 mt-8 flex flex-row items-center">
+		<!--div class="ml-42 mt-8 flex flex-row items-center">
 			<div class="h-8 w-8 flex flex-row items-center justify-center rounded-full">
 				<Icon class="mt-2px text-teal-700" name="fa6-solid:paperclip" size="16" />
 			</div>
@@ -59,7 +59,7 @@
 				{{ localData.cover.appendixTitle }}
 			</span>
 		</div>
-		<div class="ml-51.7">{{ localData.cover.appendix.join(", ") }}</div>
+		<div class="ml-51.7">{{ localData.cover.appendix.join(", ") }}</div-->
 	</div>
 </template>
 
