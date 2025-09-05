@@ -179,7 +179,7 @@ export const data = {
 		},
 		professionalExperience: [
 			{
-				timespan: "05/2024 – ongoing",
+				timespan: "05.2024 – ongoing",
 				employer: "Konoma GmbH",
 				position: "Senior Software Engineer",
 				tasks: [
