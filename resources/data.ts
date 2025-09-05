@@ -160,7 +160,7 @@ export const data = {
 				value: "verheiratet",
 			},
 			name: "Felix Grafschmidt",
-			city: "Nussbaumen AG, CH",
+			city: "Winterthur, CH",
 			mail: "felix.grafschmidt@gmail.com",
 			phone: "(+41) 774 286063",
 		},
