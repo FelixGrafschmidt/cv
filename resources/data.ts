@@ -30,7 +30,7 @@ export const data = {
 				value: "married",
 			},
 			name: "Felix Grafschmidt",
-			city: "Nussbaumen AG, Switzerland",
+			city: "Winterthur, Switzerland",
 			mail: "felix.grafschmidt@gmail.com",
 			phone: "(+41) 774 286063",
 		},
