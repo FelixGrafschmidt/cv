@@ -36,7 +36,20 @@ export const data = {
 		},
 		professionalExperience: [
 			{
-				timespan: "08/2021 – ongoing",
+				timespan: "05/2024 – ongoing",
+				employer: "Konoma GmbH",
+				position: "Senior Software Engineer",
+				tasks: [
+					"Developing, supporting, maintaining, and optimising customer web applications and mobile applications",
+					"Planning the design and architecture",
+					"Developing and connecting databases",
+					"Analysing business requirements, and performing cost estimations",
+					"Deployment and operation within a Unix-based server environment",
+					"Support for questions and issues on the developed applications",
+				],
+			},
+			{
+				timespan: "08/2021 – 04/2024",
 				employer: "Interhome Group – HHD AG, Opfikon",
 				position: "Web Developer",
 				tasks: [
@@ -166,7 +179,20 @@ export const data = {
 		},
 		professionalExperience: [
 			{
-				timespan: "08.2021 – heute",
+				timespan: "05/2024 – ongoing",
+				employer: "Konoma GmbH",
+				position: "Senior Software Engineer",
+				tasks: [
+					"Entwicklung, Betreuung, Wartung und Optimierung von Kunden-Web- und Mobile-Applikationen",
+					"Planung von Design und Architektur",
+					"Entwicklung und Anbindung von Datenbanken",
+					"Analyse, Aufwandseinschätzung und Umsetzung von Business Anforderungen",
+					"Deployment und Betrieb innerhalb einer Unix-basierten Serverumgebung",
+					"Support bei Fragen und Problemen bezüglich der entwickelten Applikationen",
+				],
+			},
+			{
+				timespan: "08.2021 – 04.2024",
 				employer: "Interhome Group – HHD AG, Opfikon",
 				position: "Webentwickler",
 				tasks: [
